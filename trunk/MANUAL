@@ -1,0 +1,1 @@
+Example of script execution: perl peakcalling_pipeline.pl PROJECTNAME mm9 true true true true false false false false notification_email@bosc.org
