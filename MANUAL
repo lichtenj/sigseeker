@@ -1,1 +1,24 @@
-Example of script execution: perl peakcalling_pipeline.pl PROJECTNAME mm9 true true true true false false false false notification_email@bosc.org
+Installation
+
+	Install each of the desired peak calling approaches based on their specific guidelines:
+	
+		BayesPeak	Spyrou2009	http://www.compbio.group.cam.ac.uk/Resources/BayesPeak/csbayespeak.html
+		BroadPeak	Wang2013	http://jordan.biology.gatech.edu/page/software/broadpeak/index.html
+		CCAT		Xu2010		http://cmb.gis.a-star.edu.sg/ChIPSeq/paperCCAT.htm
+		cisGenome	Ji2008		http://www.biostat.jhsph.edu/~hji/cisgenome/
+		E-Range		Mortazavi2008	http://woldlab.caltech.edu/rnaseq
+		MACS		Zhang2008	http://liulab.harvard.edu/MACS
+		MACS2		in prep.	https://github.com/taoliu/MACS		
+		SICER		Zang2009	http://home.gwu.edu/~wpeng/Software.htm
+		Sole-Search	Blahnik2009	http://chipseq.genomecenter.ucdavis.edu/cgi-bin/chipseq.cgi
+		SWEMBL		Schmidt2010	http://www.ebi.ac.uk/~swilder/SWEMBL
+
+	Ensure that SigSeeker.pm is configured to work with your directory structure
+
+Execution
+
+	Store bed formatted aligned read files in the read directory specified in SigSeeker.pm
+
+	Example of script execution
+
+		perl peakcalling_pipeline.pl PROJECTNAME mm9 true true true true false false false false notification_email@bosc.org
