@@ -19,6 +19,20 @@ Execution
 
 	Store bed formatted aligned read files in the read directory specified in SigSeeker.pm
 
+	Add "setup.tsv" to directory containing aligned reads
+	
+		File contains setup information for each of the aligned reads. The aligned reads need to be named in following pattern: <PROJECTNAME>_<ID>.bed
+
+		Reads describing the same cell type are to be located on the same line of the file.
+
+		All samples of the same cell type are comma separated on their line. The same goes for control files. Samples and controls are tab separated from each other.
+
+		Each line contains the celltype name and the epigenetic mark/factor at the beginning.
+
+		For example an experiment describing the profile of transcription factor GATA1 (EX_1.bed and EX_2.bed) in hematopoietic stem cells (as compared to a control profile EX_3.bed and EX_4.bed) using 2 replicates would be represented in the following fashion:
+
+			HSC-GATA1	1,2	3,4
+
 	Example of script execution
 
 		perl peakcalling_pipeline.pl PROJECTNAME mm9 true true true true false false false false notification_email@bosc.org
